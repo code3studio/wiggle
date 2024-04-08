@@ -1,14 +1,15 @@
 
 type Props = {
-    handleClick: ( ) =>void
+    handleClick?: ( ) =>void
+    width?:string
 }
 
 
 
-const Dog = ({handleClick}: Props) => {
+const Dog = ({handleClick,width}: Props) => {
   return (
     // <div style={{cursor:'pointer'}} onClick={handleClick}>
-        <img src='assets/dog.gif' style={{cursor:'pointer'}} onClick={handleClick}/>
+        <img src='assets/dog.gif' style={{cursor:'pointer'}} onClick={handleClick} width={width}/>
     // </div>
   )
 }
